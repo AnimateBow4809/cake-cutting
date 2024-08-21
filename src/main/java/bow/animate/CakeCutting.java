@@ -57,8 +57,11 @@ public class CakeCutting {
             }else {
                 yAxisCuts[Integer.parseInt(input[1])]=true;
             }
+            max=calcMax(w,h,xAxisCuts,yAxisCuts);
+            System.out.println(max);
         }
-        max=calcMax(w,h,xAxisCuts,yAxisCuts);
+//        max=calcMax(w,h,xAxisCuts,yAxisCuts);
+        if (q==0)
         System.out.println(max);
     }
 
